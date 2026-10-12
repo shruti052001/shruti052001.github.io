@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Shruti Sonavane · AI/ML Engineer</title>
-<meta name="description" content="Shruti Sonavane — AI/ML Engineer building RAG systems, LLM agents, and production ML.">
+<meta name="description" content="Shruti Sonavane — AI/ML Engineer open to AI/ML Engineer, Data Scientist, Data Analyst, and Data Engineer roles. RAG, conversational AI, LLM agents, and production ML.">
 <meta name="theme-color" content="#f0545c">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Shruti Sonavane · AI/ML Engineer">
-<meta property="og:description" content="RAG systems, LLM agents, and production ML — from prototype to production in banking and retail.">
+<meta property="og:description" content="Open to AI/ML Engineer, Data Scientist, Data Analyst, and Data Engineer roles. RAG, conversational AI, LLM agents, and production ML.">
 <meta property="og:url" content="https://shruti052001.github.io/">
 <meta property="og:image" content="https://shruti052001.github.io/assets/og-image.png">
 <meta property="og:image:width" content="1200">
@@ -153,6 +153,26 @@
   .btn-primary:hover { background: var(--red-deep); transform: translateY(-2px); }
   .btn-ghost { background: var(--surface); color: var(--ink); border: 1.5px solid var(--rose-200); }
   .btn-ghost:hover { border-color: var(--red); color: var(--red-deep); transform: translateY(-2px); }
+  .open-to {
+    margin-bottom: 28px; padding: 16px 18px; border-radius: 18px;
+    background: var(--rose-50); border: 1.5px solid var(--rose-200);
+    max-width: 600px; position: relative;
+  }
+  .open-to-head { display: flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 800; letter-spacing: .6px; text-transform: uppercase; color: var(--red-deep); margin-bottom: 12px; }
+  .open-to-head .dot { width: 8px; height: 8px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 0 4px rgba(34,197,94,.18); animation: pulse 2s infinite; }
+  .open-to-head small { margin-left: auto; font-size: 12px; font-weight: 600; text-transform: none; letter-spacing: 0; color: var(--ink-faint); }
+  .role-pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .role-pill {
+    display: inline-flex; align-items: center; gap: 7px;
+    font-size: 14px; font-weight: 700; color: var(--ink);
+    background: var(--surface); border: 1.5px solid var(--rose-200);
+    padding: 7px 12px; border-radius: 12px; transition: all .2s;
+  }
+  .role-pill:hover { background: var(--red); border-color: var(--red); color: #fff; transform: translateY(-2px); }
+  .role-pill span { font-size: 15px; }
+  .open-to .role-pills { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .open-to .role-pill { justify-content: flex-start; }
+  .contact .role-pills { justify-content: center; margin: -12px auto 32px; max-width: 640px; }
   .stats { display: flex; gap: 36px; margin-top: 48px; flex-wrap: wrap; }
   .stat b { font-family: var(--serif); font-size: 44px; font-weight: 400; color: var(--red); line-height: 1; display: block; }
   .stat span { font-size: 13px; color: var(--ink-faint); font-weight: 600; }
@@ -344,6 +364,11 @@
     .wrap { padding-left: 16px; padding-right: 16px; }
     nav .hide-sm { display: none; }
     .card, .card.small { grid-column: span 6; }
+    .open-to { padding: 14px; }
+    .open-to .role-pills { gap: 6px; }
+    .open-to .role-pill { font-size: 13px; padding: 7px 9px; gap: 5px; white-space: nowrap; }
+    .open-to-head { flex-wrap: wrap; }
+    .open-to-head small { margin-left: 16px; width: 100%; }
     nav { gap: 0; }
     nav a:not(.logo) { padding: 8px 9px; }
     nav .logo { padding: 4px 8px; }
@@ -379,10 +404,18 @@
 
 <header class="wrap hero" id="top">
   <div>
-    <div class="badge"><span class="dot"></span> Open to AI/ML roles · Open to relocate</div>
+    <div class="open-to" aria-label="Roles I'm open to">
+      <div class="open-to-head"><span class="dot"></span>Open to roles<small>Full-time · Open to relocate</small></div>
+      <div class="role-pills">
+          <span class="role-pill"><span>🤖</span>AI/ML Engineer</span>
+          <span class="role-pill"><span>🧪</span>Data Scientist</span>
+          <span class="role-pill"><span>📊</span>Data Analyst</span>
+          <span class="role-pill"><span>🛠️</span>Data Engineer</span>
+        </div>
+    </div>
     <h1>Shruti<br><em>Sonavane</em></h1>
     <div class="role">I build <span class="typed" id="typed"></span></div>
-    <p class="lede">AI/ML Engineer with 3+ years taking ML, NLP, and Generative AI systems from prototype to production across banking and retail. Most recently, compliance-grade RAG at Citigroup.</p>
+    <p class="lede">AI/ML Engineer with 3+ years taking ML, NLP, and Generative AI systems from prototype to production across banking and retail. Most recently, compliance-grade RAG at Citigroup. I'm especially interested in <b style="color:var(--red-deep)">conversational AI</b>: assistants and agents that hold real, grounded conversations.</p>
     <div class="cta">
       <a href="#projects" class="btn btn-primary">See my work →</a>
       <a href="assets/Shruti_Sonavane_Resume.pdf" download class="btn btn-ghost">Download résumé ↓</a>
@@ -546,7 +579,13 @@
   <div class="wrap">
     <p class="eyebrow reveal">05 · Contact</p>
     <h2 class="reveal">Let's build<br><em>something smart.</em></h2>
-    <p class="reveal">Based in North Carolina and open to relocate. I'm always happy to talk about RAG, agents, or the next hard ML problem.</p>
+    <p class="reveal">Based in North Carolina and open to relocate. I'm open to these roles and always happy to talk about conversational AI, RAG, agents, or the next hard data problem.</p>
+    <div class="role-pills reveal">
+      <span class="role-pill"><span>🤖</span>AI/ML Engineer</span>
+      <span class="role-pill"><span>🧪</span>Data Scientist</span>
+      <span class="role-pill"><span>📊</span>Data Analyst</span>
+      <span class="role-pill"><span>🛠️</span>Data Engineer</span>
+    </div>
     <div class="socials reveal">
       <button class="btn btn-primary" id="copyEmail">✉ shrutisonavane0510@gmail.com</button>
       <!-- TODO: add LinkedIn URL and remove `hidden` --><a class="btn btn-ghost" href="#" target="_blank" rel="noopener" id="linkedinLink" hidden>LinkedIn ↗</a>
@@ -628,10 +667,10 @@ const PROJECTS = {
 
 // tiny "retrieval" knowledge base for the hero chat
 const KB = [
-  { k: ["work", "focus", "who", "summary", "background"], a: "Shruti builds production AI systems: RAG pipelines, LLM agents and copilots, fine-tuned NLP models, and the evaluation + monitoring around them.", c: "summary" },
+  { k: ["work", "focus", "who", "summary", "background", "interest", "conversation", "conversational"], a: "Shruti builds production AI systems: RAG pipelines, LLM agents and copilots, fine-tuned NLP models, and the evaluation + monitoring around them. She's especially interested in conversational AI.", c: "summary" },
   { k: ["citi", "citigroup", "impact", "bank", "audit"], a: "At Citigroup she shipped a secure RAG assistant for audit teams — 65% less manual review time and +28% retrieval accuracy — and cut inference compute 23% via eval-driven model retirement.", c: "experience/citigroup" },
   { k: ["stack", "tools", "framework", "langchain", "langgraph"], a: "Go-to stack: Python, LangGraph/LangChain, FAISS or Qdrant with hybrid search + Cohere Rerank, FastAPI, Docker, and Evidently AI for drift.", c: "skills" },
-  { k: ["open", "hire", "hiring", "available", "relocate", "job", "role"], a: "Yes! She's open to AI/ML Engineer roles and happy to relocate. Scroll to Contact to reach her.", c: "contact" },
+  { k: ["open", "hire", "hiring", "available", "relocate", "job", "role"], a: "Yes! She's open to AI/ML Engineer, Data Scientist, Data Analyst, and Data Engineer roles, and happy to relocate. Scroll to Contact to reach her.", c: "contact" },
   { k: ["project", "vendor", "rag", "agent", "agentic"], a: "Her flagship project is Vendor Mind — an agentic RAG assistant for SaaS spend with clause-aware chunking, cited answers, and an eval harness.", c: "projects/vendor-mind" },
   { k: ["fraud", "autoencoder", "keras"], a: "She built an unsupervised autoencoder in Keras that detects credit-card fraud via reconstruction error on a heavily imbalanced 284K-transaction dataset.", c: "projects/fraud" },
   { k: ["caption", "image", "vision", "lstm", "cnn", "densenet"], a: "She built an image caption generator: a DenseNet201 encoder + LSTM decoder trained on Flickr30k that writes a sentence describing any photo — on par with Google's Show & Tell baseline.", c: "projects/image-caption" },
