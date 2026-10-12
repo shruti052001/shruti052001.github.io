@@ -170,7 +170,8 @@
   }
   .role-pill:hover { background: var(--red); border-color: var(--red); color: #fff; transform: translateY(-2px); }
   .role-pill span { font-size: 15px; }
-  .open-to .role-pills { display: grid; grid-template-columns: repeat(2, 1fr); }
+  .open-to .role-pills { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 140px), 1fr)); }
+  @media (min-width: 561px) { .open-to .role-pills { grid-template-columns: repeat(2, 1fr); } }
   .open-to .role-pill { justify-content: flex-start; }
   .contact .role-pills { justify-content: center; margin: -12px auto 32px; max-width: 640px; }
   .stats { display: flex; gap: 36px; margin-top: 48px; flex-wrap: wrap; }
